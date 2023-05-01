@@ -1,0 +1,240 @@
+@import 'https://kit-pro.fontawesome.com/releases/v5.9.0/css/pro.min.css';
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap';
+
+*,
+:after,
+::before {
+	box-sizing: border-box
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	color: #fff;
+	background-color: #151515;
+	line-height: 1.5;
+	font-family: 'Josefin Sans', sans-serif;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.9)) , url("https://64.media.tumblr.com/896b21ac5f8ad4b46cfac9a216b0657a/tumblr_ogqsxoRtme1rldv4go1_1280.gifv");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	
+}
+
+#particles-js {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	top: 0;
+	left: 0;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@media (max-width: 500px) {
+	img {
+		width: 200px;
+		height: 200px;
+	}
+}
+
+h1 {
+	font-size: 45px;
+	margin-top: 20px;
+	margin-bottom: -30px;
+}
+
+p {
+	color: white;
+	line-height: 1.5;
+}
+.textleft {
+	text-align: left;
+}
+
+.tools {
+	padding: 75px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-width: 1000px!important;
+	border-radius: 5px;
+	margin-left: 15px;
+	margin-right: 15px;
+	opacity: 1;
+	border: 0px solid #ff0078;
+	box-shadow: 0 0px 35px 0px rgba(0, 0, 0, 0.5);
+}
+
+.center {
+	position: static;
+	height: 100%;
+	width: 100%;
+	display: table;
+	overflow: hidden;
+}
+
+.center2 {
+	position: static;
+	height: 75%;
+	width: 100%;
+	display: table;
+	overflow: hidden;
+}
+.left {
+	position: static;
+	height: 100%;
+	width: 50%;
+	display: table;
+	overflow: hidden;
+}
+
+.right {
+	position: static;
+	height: 100%;
+	width: 150%;
+	display: table;
+	overflow: hidden;
+}
+
+.center-content {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding: 0%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.button {
+	display: inline-block;
+	background-color: transparent;
+	border: 1px solid white;
+	padding: 10px 15px;
+	text-align: center;
+	font-size: .9rem;
+	font-weight: bold;
+	max-width: 150px;
+	border-radius: 2px;
+	color: #f8f9fa;
+	margin: auto;
+	transition: 0.5s;
+	cursor: pointer;
+	outline: 0;
+	margin: 5px;
+}
+
+.button:hover {
+	color: #212529;
+	border: 1px solid white!important;
+	background-color: #f8f9fa;
+	border-color: #f8f9fa
+}
+
+::-webkit-scrollbar {
+	width: 0px
+}
+
+img {
+-webkit-user-select: none !important;
+-khtml-user-select: none !important;
+-moz-user-select: none !important;
+-o-user-select: none !important;
+user-select: none !important;
+}
+.astext {
+    background:none;
+    border:none;
+	cursor: pointer;
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+	position: absolute;
+}
+.navtop {
+	box-shadow: 0 0px 35px 0px rgba(0, 0, 0, 0.5);
+	height: 60px;
+	width: 100%;
+	border: 0;
+}
+.navtop div {
+	display: flex;
+	margin: 0 auto;
+	width: 1000px;
+	height: 100%;
+}
+.navtop div h1, .navtop div a {
+	display: inline-flex;
+	align-items: center;
+}
+.navtop div h1 {
+	flex: 1;
+	font-size: 24px;
+	padding: 0;
+	margin: 0;
+	color: #eaebed;
+	font-weight: normal;
+}
+.navtop div a {
+	padding: 0 20px;
+	text-decoration: none;
+	color: #c1c4c8;
+	font-weight: bold;
+}
+.navtop div a i {
+	padding: 2px 8px 0 0;
+}
+.navtop div a:hover {
+	color: #eaebed;
+}
+body.loggedin {
+	background-color: #f3f4f7;
+}
+ /* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+video 
+{
+	filter: brightness(30%);
+}
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+} 

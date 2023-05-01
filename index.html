@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024">
+    <meta name="theme-color" content="#4263f4">
+    <meta property="og:site_name" content="theyluvtactic.space">
+    <title>theyluvtactic.space</title>
+    <script src="assets/js/title.js"></script>
+    <link rel="icon" href="https://cdn.discordapp.com/emojis/778637845312569344.webp?size=96&quality=lossless">
+    <link rel="stylesheet" href="assets/css/preload.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/main.js" type="ea6ea3b2bbdf438d2fdee388-text/javascript"></script>
+    <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js"
+        data-cf-settings="ea6ea3b2bbdf438d2fdee388-|49" defer=""></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="assets/js/protection.js"></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+</head>
+<video autoplay muted id="myVideo">
+    <source src="https://files.prox.ovh/tokyopill.mp4" type="video/mp4">
+    Your browser does not support the Video Element.
+</video>
+<div id="preloader">
+    <div id="loader"></div>
+</div>
+<script>
+    AOS.init();
+</script>
+
+<div id="particles-js"></div>
+<div class="center">
+    <i class="astext">Click anywhere to unmute audio.</i>
+    <div class="center-content">
+        <center>
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <div class="tools" data-aos="zoom-in">
+                    <h1>theyluvtactic.space</h1>
+                    <br>
+                    <blink>
+                        <marquee behavior="scroll" direction="left" scrollamount="5"><span style="color:white"></span>
+                            <div id="factDisplay"></div>
+                        </marquee>
+                    </blink>
+                    <a href="https://discord.com/users/956073496021176410" target="_blank">
+                    <a href="https://discord.com/users/956073496021176410" target="_blank">
+                        <img src="https://discord.c99.nl/widget/theme-4/956073496021176410.png" style="width:auto;"></a>
+                    <br>
+                    <a href="https://www.twitch.tv/theyluvtactic" target="_blank">
+                        <div class="button"><i class="iconify" data-icon="bi:twitch"></i>
+                            Twitch</div>
+                            <a href="https://instagram.com/theyluvtactic" target="_blank">
+                                <div class="button"><i class="iconify" data-icon="bi:instagram"></i>
+                                    Instagram</div>
+                            <a href="https://steamcommunity.com/id/theyluvtactic/" target="_blank">
+                                <div class="button"><i class="iconify" data-icon="bi:steam"></i>
+                                    Steam</div>
+                                        <a href="https://discord.gg/entity" target="_blank">
+                                            <div class="button"><i class="iconify" data-icon="simple-icons:discord"></i>
+                                               Entity Discord</div>
+                                </a>
+                </div>
+        </center>
+    </div>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<script src="assets/js/preload.js"></script>
+</div>
+</body>
+<script type="text/javascript">
+    (function newFact() {
+        var facts =
+            ['1400',
+                'discord.gg/entity',
+                '@theyluvtactic on all socials',];
+        var randomFact = Math.floor(Math.random() * facts.length);
+        document.getElementById('factDisplay').innerHTML = facts[randomFact];
+    })();
+</script>
+<script type="text/javascript">
+    var t = document.getElementById("myaudio");
+    t.volume = 0.5;
+
+    function playAudio() {
+        t.play();
+    }
+
+    function pauseAudio() {
+        t.pause();
+    }
+</script>
+<script type="text/javascript">
+    var sounds = new Array();
+    sounds[0] = "https://cdn.codeine.space/ethereal.mp4";
+    sounds[1] = "https://streamable.com/d8bq7u";
+    sounds[2] = "https://cdn.codeine.space/%EF%BC%90%EF%BC%92%EF%BC%97%EF%BC%99%EF%BC%90%EF%BC%96.mp4";
+    sounds[3] = "https://cdn.codeine.space/027%27906.mp4";
+    sounds[4] = "https://cdn.codeine.space/Malo%20Tebya.mp4";
+    function getRandomSounds() {
+        var randomNum = Math.floor(Math.random() * sounds.length);
+        document.getElementById("myVideo").src = sounds[randomNum];
+    }
+    document.getElementById("myVideo").addEventListener("ended", getRandomSounds);
+    getRandomSounds();
+</script>
+
+<script>
+    var video = document.getElementById('myVideo');
+
+    document.onclick = function toggleMute() {
+        video.volume = 0.2;
+        video.muted = !video.muted;
+    }
+</script>
+
+</html>
